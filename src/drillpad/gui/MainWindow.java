@@ -1855,6 +1855,7 @@ public class MainWindow extends javax.swing.JFrame implements AnimationPropertie
         {
             showRotationArrow(mousePosition);
             controller.rotateSelectedPlayer(previousMousePosition, mousePosition);
+            previousMousePosition = mousePosition;
         }
     }//GEN-LAST:event_drawingPanelMouseDragged
 

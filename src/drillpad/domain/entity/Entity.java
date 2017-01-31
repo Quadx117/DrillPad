@@ -133,7 +133,7 @@ public class Entity implements Serializable
         b.normalize();
         float y = a.perp().dotProduct(b);
         float x = a.dotProduct(b);
-        angleInRadians = (float) Math.atan2(y, x);
+        angleInRadians += (float) Math.atan2(y, x);
     }
 
     public boolean hasImage()
